@@ -15,18 +15,17 @@ public class genRanStr {
     int i;
 
     for (i = 0; i < n; i++)
-      res = res + alphabet[(int) (Math.random() * 100 % 4)]; // concatenate a random char from array alphabet with
-                                                             // string res
-
+      res = res + alphabet[(int) (Math.random() * 100 % 4)]; // concatenate a random char from array alphabet with string res
+  
     String[] suffix = new String[res.length()];
 
     for (i = 0; i < res.length(); i++)
       suffix[i] = res.substring(i, res.length());
 
-    System.out.println("Generated:");
+    System.out.println("Generated: " + res);
     for (i = 0; i < suffix.length; i++) {
 
-      System.out.println(i + " " + suffix[i]);
+      System.out.println(i + ":" + suffix[i]);
     }
 
     return suffix;

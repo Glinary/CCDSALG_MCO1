@@ -1,4 +1,4 @@
-public class MergeSort {
+public class Sort {
 
   public void merge(String[] text, int p, int q, int r) {
     int n1 = q - p + 1;
@@ -45,12 +45,12 @@ public class MergeSort {
       
   }
 
-  public void MergeSort2(String[] text, int left, int right) {
+  public void mergeSort2(String[] text, int left, int right) {
     if (left < right) {
       int mid = (left + right) / 2;
 
-      MergeSort2(text, left, mid);
-      MergeSort2(text, mid + 1, right);
+      mergeSort2(text, left, mid);
+      mergeSort2(text, mid + 1, right);
 
       merge(text, left, mid, right);
     }
@@ -72,5 +72,18 @@ public class MergeSort {
     }
     
     return indexArray;
+  }
+
+  public void bubbleSort(String[] text) {
+    for(int i = 0; i < text.length; i++) {
+      for(int j = i + 1; j < text.length; j++) {
+        //compare the adjacent strings
+        if(text[j].compareTo(text[i]) < 0) {
+          String temp = text[i];
+          text[i] = text[j];
+          text[j] = temp;
+       }
+      }
+    }
   }
 }

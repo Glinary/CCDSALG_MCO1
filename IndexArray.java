@@ -1,4 +1,4 @@
-public class indexArray {
+public class IndexArray {
 
   public void indexArray (int[] index) {
     System.out.print("Suffix Array: ");
