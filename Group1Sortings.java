@@ -1,4 +1,4 @@
-public class Sorting {
+public class Group1Sortings {
 
   public static String generateRandomString(int n) {
     char alphabet[] = {'a', 'c', 'g','t'};

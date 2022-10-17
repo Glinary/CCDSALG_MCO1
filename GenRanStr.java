@@ -1,7 +1,7 @@
-public class genRanStr {
+public class GenRanStr {
   private char[] alphabet;
 
-  public genRanStr() {
+  public GenRanStr() {
     alphabet = new char[4];
     alphabet[0] = 'a';
     alphabet[1] = 'c';
@@ -22,11 +22,10 @@ public class genRanStr {
     for (i = 0; i < res.length(); i++)
       suffix[i] = res.substring(i, res.length());
 
-    System.out.println("Generated: " + res);
-    for (i = 0; i < suffix.length; i++) {
-
-      System.out.println(i + ":" + suffix[i]);
-    }
+    //System.out.println("Generated: " + res);
+    //for (i = 0; i < suffix.length; i++) {
+    //  System.out.println(i + ":" + suffix[i]);
+    //}
 
     return suffix;
   }
