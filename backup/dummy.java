@@ -1,3 +1,10 @@
+/*
+  MCO1 Sorting S21 Group 4
+  Cabungcal, Mary Joselle
+  Ladrido, Eryl Gabriel
+  Rejano, Hans Martin
+  Uy, Gleezell Vina
+*/
 public class dummy {
 
   public static String generateRandomString(int n) {

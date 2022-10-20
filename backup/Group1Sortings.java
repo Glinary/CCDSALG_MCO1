@@ -1,15 +1,34 @@
+/*
+  MCO1 Sorting S21 Group 4
+  Cabungcal, Mary Joselle
+  Ladrido, Eryl Gabriel
+  Rejano, Hans Martin
+  Uy, Gleezell Vina
+*/
 public class Group1Sortings {
 
+  /**
+  *This generates a random string from the letters a,c,t,g
+  *
+  *@param n - length of string to be generated
+  *@return randomString - random string generated
+  */
   public static String generateRandomString(int n) {
     char alphabet[] = {'a', 'c', 'g','t'};
  
     String randomString = ""; //initialize as empty string
     for (int i = 0; i < n; i++)
-        randomString = randomString + alphabet[(int) (Math.random() * 100 % 4)]; //concatenate/append idk the word, a character from alphabet array to randomString
+        randomString = randomString + alphabet[(int) (Math.random() * 100 % 4)]; //concatenate/append a character from alphabet array to randomString
      
     return randomString; //return the generated string
 }
 
+  /**
+  *This creates and returns the suffix array
+  *
+  *@param text - contains the original text of suffix array
+  *@return suffix - the suffix array
+  */
   public static String[] createSuffix(String text) {
     String [] suffix = new String[text.length()]; //initialize suffix string
 
